@@ -22,9 +22,9 @@ else
     sudo apt update
     sudo apt install libgc-dev -y
     git clone https://github.com/vlang/v
-    #TEMP TO KEEP IT TO WORK
-    checkout origin/redesign-orm
     cd v
+    #TEMP TO KEEP IT TO WORK
+    git checkout origin/redesign-orm
     sudo make
     sudo ./v symlink
     popd "$@" > /dev/null
