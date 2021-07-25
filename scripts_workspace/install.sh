@@ -23,8 +23,6 @@ else
     sudo apt install libgc-dev -y
     git clone https://github.com/vlang/v
     cd v
-    #TEMP TO KEEP IT TO WORK
-    git checkout origin/redesign-orm
     sudo make
     sudo ./v symlink
     popd "$@" > /dev/null
@@ -38,9 +36,6 @@ then
 else
     pushd /workspace
     git clone https://github.com/crystaluniverse/crystallib
-    cd crystallib
-    # git checkout refactor_publish_config
-    cd ..
     sudo rm -rf ~/.vmodules
     mkdir -p ~/.vmodules/despiegk/
     popd "$@" > /dev/null
